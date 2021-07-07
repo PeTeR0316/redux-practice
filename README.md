@@ -46,4 +46,4 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 
-비주얼 스튜디오 코드에서 깃 연동
+비주얼 스튜디오 코드에서 깃 연동 확인
