@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Todos, Todo } from '../modules/todo';
 import { useDispatch } from 'react-redux';
 import { addTodo, toggleTodo, removeTodo } from '../modules/todo';
+import {increase, decrease } from '../modules/counter';
 
 type Props = {
     todos: Todos;
@@ -17,6 +18,7 @@ const TodoApp = ({ todos }: Props) => {
         e.preventDefault();
         dispatch(addTodo(input));
         setInput("");
+        dispatch(increase());
     };
 
     const handleClick = (id: number) => {
@@ -25,6 +27,7 @@ const TodoApp = ({ todos }: Props) => {
 
     const handleRemove = (id: number) => {
         dispatch(removeTodo(id));
+        dispatch(decrease());
     };
 
     // const done = {

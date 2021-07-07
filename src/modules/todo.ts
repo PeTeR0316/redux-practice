@@ -70,8 +70,7 @@ export default function todoReducer(state = initialState, action:TodoAction): To
         case ADD_TODO: 
             const id = Math.max(...state.map((todo) => todo.id)) + 1; 
             return state.concat({ 
-                id, text: action.payload, 
-                isToggle: false 
+                id, text: action.payload, isToggle: false 
             });
         case REMOVE_TODO:
             return state.filter((todo) => {return todo.id !== action.payload});

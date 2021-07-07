@@ -9,4 +9,4 @@ const TodoAppContainer = () => {
     return <TodoApp todos={todos} />;
 };
 
-export default TodoAppContainer;
+export default TodoAppContainer
