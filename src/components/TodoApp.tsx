@@ -9,7 +9,7 @@ type Props = {
 }
 
 const TodoApp = ({ todos }: Props) => {
-    //디스패치 함수에 파라미터로 액션객체를 낳아주면 스토어로 전달하여 액션을 발생시키고,
+    //디스패치 함수에 파라미터로 액션객체를 넣어주면 스토어로 전달하여 액션을 발생시키고,
     //리듀서 모듈에 이 액션이 있다면 새로운 상태로 바뀌게 되는 것
     const dispatch = useDispatch();
     const [input, setInput] = useState("");
