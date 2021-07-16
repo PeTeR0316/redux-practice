@@ -1,11 +1,13 @@
 import { combineReducers  } from 'redux';
 import todoReducer from './todo';
 import counterReducer from './counter';
+import arrayReducer from './array';
 
 //여러 리듀서 모듈들을 하나로 병합
 const rootReducer = combineReducers({
     todoReducer,
-    counterReducer
+    counterReducer,
+    arrayReducer
 });
 
 // 루트 리듀서의 반환값를 유추해줍니다
